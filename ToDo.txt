@@ -1,0 +1,24 @@
+PHP インストール
+　https://www.javadrive.jp/php/install/
+
+Apache インストール
+　https://www.javadrive.jp/apache/install/
+Apache　設定
+　https://www.javadrive.jp/apache/php/
+Apache　起動方法
+　https://programming-style.com/apache/reference/boot-win/
+XAMPP（Apacheの代わり）
+　https://www.javadrive.jp/xampp/
+
+
+Render　デプロイ方法
+　https://dev.classmethod.jp/articles/github-render-deploy/
+Heroku　インストール
+（結局使ってない）
+　https://www.sejuku.net/blog/94992
+
+MySQL　インストール
+　https://proengineer.internous.co.jp/content/columnfeature/6529
+
+PHP　データベース接続
+　https://dekfractal.com/4213.html
