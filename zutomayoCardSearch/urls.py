@@ -1,10 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include
-# views.pyからsearchを呼び出す
-from .views import search
+from . import views
 
 app_name = 'zutomayoCardSearch'
 
 urlpatterns = [
-    path('', search, name='search'),
+    path( '', views.search, name = 'search' ),
+    path( 'test', views.cardSearch, name = 'cardSearch' ),
+    path( 'info', views.cardInfo, name = 'cardInfo' ),
 ]

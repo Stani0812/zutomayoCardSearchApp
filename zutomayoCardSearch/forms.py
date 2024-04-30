@@ -9,3 +9,6 @@ class SearchForm(forms.ModelForm):
             'name': forms.TextInput(),
             'content': forms.Textarea()
         }
+
+class CardSearchForm( forms.Form ):
+    searchText = forms.CharField( label = '検索文字入力' )

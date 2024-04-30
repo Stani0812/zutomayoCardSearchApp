@@ -1,0 +1,36 @@
+<!doctype html>
+{% load static %}
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <table>
+            <tr>
+                {% for col in header %}
+                    <th>{{ col }}</th>
+                {% endfor %}
+            </tr>
+            {% for content in contents %}
+            <tr>
+                <td><img src='{{ MEDIA_URL }}{{ content.image }}' width=200></td>
+                <td>{{ content.cardID }}</td>
+                <td>{{ content.name }}</td>
+                <td>{{ content.rare }}</td>
+                <td>{{ content.cardType }}</td>
+                <td>{{ content.element }}</td>
+                <td>{{ content.kronos }}</td>
+                <td>{{ content.powerCost }}</td>
+                <td>{{ content.sendToPower }}</td>
+                <td>{{ content.nightPower }}</td>
+                <td>{{ content.dayPower }}</td>
+                <td>{{ content.skillType }}</td>
+                <td>{{ content.skillText }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

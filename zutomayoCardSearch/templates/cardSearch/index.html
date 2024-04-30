@@ -1,0 +1,18 @@
+<!doctype html>
+{% load static %}
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>テストWebアプリ</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+  </head>
+  <body>
+    <h1>ずとまよカード検索データベース</h1>
+    <p>{{ insert_forms|linebreaksbr }}</p>
+    <form action="{% url 'zutomayoCardSearch:cardSearch' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="検索">
+    </form>
+  </body>
+</html>
